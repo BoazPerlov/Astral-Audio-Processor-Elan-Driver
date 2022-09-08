@@ -1,0 +1,41 @@
+DRIVER_ID			= AUDIO_ZONECTLR_LUA_NETWORK
+DRIVER_VERSION		= 1.0.9
+VENDOR				= Indigo
+DRIVER_NAME			= Astral
+LUA_SRC				= Astral.lua
+SCHEMA				= 93
+VOLUME_MODE			= RELATIVE
+INPUT_SUFFIX 		= "\n"
+
+NUM_SOURCES		= 1
+SOURCE_1_NAME = Source 1
+
+NUM_ZONES		= 1
+
+ZONE_1_NAME	= Main Theatre
+
+DEFAULT_PORT		= 23
+NOCHANGE_PORT
+
+[RESOURCES_BEGIN]
+    settings_pg.emv
+[RESOURCES_END]
+
+ZONE_1_GUI = settings_pg.emv
+
+[CONFIG_STRINGS_BEGIN]
+        CFG_STRING_1: label:Brand tag: CFG_Brand
+        CFG_STRING_2: label:Model tag:CFG_Model
+        CFG_STRING_3: label:Firmware Version tag:CFG_FW 
+[CONFIG_STRINGS_END]
+
+[REGISTER_COMMANDS_BEGIN]
+	Preset 1, 3001
+	Preset 2, 3002
+	Preset 3, 3003
+	Preset 4, 3004
+	Preset 5, 3005
+	Preset 6, 3006
+[REGISTER_COMMANDS_END]
+
+CONFIG_BUTTON_1 = Begin Discovery
