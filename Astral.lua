@@ -1,6 +1,4 @@
 -- ===============================================
--- Welcome to my first actual driver
--- I'm pretty proud of this one!
 -- Features included:
 -- Zone and source discovery
 -- Two-way communication of: processor state, volume, zone power and source selection
